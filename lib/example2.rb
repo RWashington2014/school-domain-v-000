@@ -12,6 +12,7 @@ class Dog
   #def name
   #  @name
   #end
+  attr_accessor :breed, :hair_color, :age, :gender  #> 8 methods get added
 
   def bark
     puts "Woof!!!#{@the_name}"
