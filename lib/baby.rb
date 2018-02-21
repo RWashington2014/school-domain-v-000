@@ -9,7 +9,6 @@ class Baby
   def cry
     puts "Waaaaaaa!!!!"
   end
-
 end
 
 
