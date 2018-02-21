@@ -1,10 +1,10 @@
 class Baby
-  
+
   def initialize
     cry
-  
+
   end
-  
+
   def cry
     puts "Waaaaaaa!!!!"
   end
@@ -12,11 +12,12 @@ class Baby
 end
 
 
+Baby.new # => initialize
 
 #1. Make them cry when they are born.
 #2. Give them a name (through reader/writer)
 #3. Allow them to cry through method cry
-#4. 
+#4.
 
 north_west = Baby.new
 north_west.name = "North West"
