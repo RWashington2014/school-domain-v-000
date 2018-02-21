@@ -1,6 +1,8 @@
 class Baby
+  attr_accessor :name
 
-  def initialize
+  def initialize(name = nil)
+    @name = name
     cry
   end
 
@@ -16,7 +18,7 @@ Baby.new # => initialize
 #1. Make them cry when they are born.
 #2. Give them a name (through reader/writer)
 #3. Allow them to cry through method cry
-#4.
+#4. Allow name's to be optionally set when they are born
 
 north_west = Baby.new
 north_west.name = "North West"
