@@ -2,7 +2,6 @@ class Baby
 
   def initialize
     cry
-
   end
 
   def cry
