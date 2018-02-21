@@ -12,7 +12,13 @@ class Dog
   #def name
   #  @name
   #end
-  attr_accessor :breed, :hair_color, :age, :gender  #> 8 methods get added
+  attr_accessor :breed, :hair_color, :age  #> 6 methods get added
+  
+  attr_reader :gender
+  #=> 1 method added, gender, reader from instance variable @gender
+  
+  attr_writer :last_meal
+  #=> 1 method added, last_meal=, writing to an instance variable @last_meal
 
   def bark
     puts "Woof!!!#{@the_name}"
