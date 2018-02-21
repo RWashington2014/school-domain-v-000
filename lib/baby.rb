@@ -1,16 +1,31 @@
-class Dog
-  attr_reader :name
-
-  def initialize(name)  # => Hook / Callback / Life Cycle Event
-    # Dog #initialize will automatically fire upon evocation of Dog.new
-
-    puts "A new dog was just born!!!"
-    @name = name # => Static Property
-    @born_on = Time.now # => Static property
+class Baby
+  
+  def initialize
+    cry
+  
   end
-
-  def age
-    Time.now - @born_on
+  
+  def cry
+    puts "Waaaaaaa!!!!"
   end
 
 end
+
+
+
+#1. Make them cry when they are born.
+#2. Give them a name (through reader/writer)
+#3. Allow them to cry through method cry
+#4. 
+
+north_west = Baby.new
+north_west.name = "North West"
+
+blue_ivy = Baby.new
+blue_ivy.name = "Blue Ivy"
+
+north_west.name # => "North West"
+blue_ivy.name # =>  "Blue Ivy"
+
+north_west.cry # => "Waaaaaaa!!!!"
+blue_ivy.cry  # =>  "Waaaaaa!!!!!"
